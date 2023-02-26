@@ -9,7 +9,7 @@
 ![image](https://user-images.githubusercontent.com/99389490/221417356-c64b5e2a-b660-4dd1-9f1f-94dee5cd04a9.png)
 ###
 ### Для того, чтобы настроить дальнейшую авторизацию и регистрацию в приложении, необходимо перейти во вкладку "Authentication" в Firebase, где подключить метод входа "Email/Password".
-![image](https://user-images.githubusercontent.com/99389490/221417720-73f8269a-258b-4cc6-8de2-42c32aba771e.png)
+![image](https://user-images.githubusercontent.com/99389490/221419840-46aeec7c-7456-4717-8d5c-2955a2f64206.png)
 ### 
 ### После во вкладке "Users" будут отображаться зарегистрированные пользователи.
 ### 
@@ -38,12 +38,13 @@
 ### Также можно увидеть отображение нового пользователя в Firebase.
 ![image](https://user-images.githubusercontent.com/99389490/221419542-2a0f1ffd-7375-4a4b-a632-b218d56c0476.png)
 ###
-### Код реализации аккаунта пользователя с отображением почты и кнопкой "Выход".
+### Код реализации аккаунта пользователя с отображением почты и кнопкой "Выйти". После того, как будет нажата кнопка выхода, пользователь перенесется в анонимный вход в приложение.
 ![image](https://user-images.githubusercontent.com/99389490/221419470-901da375-09f9-4d30-897b-08c7d0c1a66a.png)
 ###
-### Также необходимо реализовать обновление пароля. Для этого понадобятся файлы "user.dart" и "app_user_controller.dart". Для обновления пароля был использован метод POST. После необходимо протестировать работоспособность авторизации в Thunder Client с помощью запроса "http://localhost:8888/user" и указанием параметров query "oldPassword" и "newPassword".
+### Пример реализации аккаунта пользователя с отображением почты и кнопкой "Выйти".
 ![image](https://user-images.githubusercontent.com/99389490/216462270-9cb01bb5-49dc-4755-960c-09df2fbea39a.png)
 ![image](https://user-images.githubusercontent.com/99389490/216462161-f9f8d19d-fd49-41db-8a58-a98bf95a9855.png)
+![image](https://user-images.githubusercontent.com/99389490/221419903-c6aeddea-c1f0-4724-817b-f35b47272f72.png)
 ###
 ### На рисунке ниже продемонстрированы данные, которые хранятся в БД.
 ![image](https://user-images.githubusercontent.com/99389490/216462366-e0f95cf2-3f6e-4228-81bc-c379d85d06df.png)
