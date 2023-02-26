@@ -3,7 +3,6 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter_firebase_auth/screens/account.dart';
 import 'package:flutter_firebase_auth/screens/home.dart';
 import 'package:flutter_firebase_auth/screens/login.dart';
-import 'package:flutter_firebase_auth/screens/reset_pass.dart';
 import 'package:flutter_firebase_auth/screens/signup.dart';
 import 'package:flutter_firebase_auth/screens/email.dart';
 import 'package:flutter_firebase_auth/services/firebase_stream.dart';
@@ -36,7 +35,6 @@ class MyApp extends StatelessWidget {
         '/account': (context) => const AccountScreen(),
         '/login': (context) => const LoginScreen(),
         '/signup': (context) => const SignUpScreen(),
-        '/reset_password': (context) => const ResetPasswordScreen(),
         '/verify_email': (context) => const VerifyEmailScreen(),
       },
       initialRoute: '/',
