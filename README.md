@@ -45,36 +45,11 @@
 ### Пример реализации аккаунта пользователя с отображением почты и кнопкой "Выйти".
 ![image](https://user-images.githubusercontent.com/99389490/221419903-c6aeddea-c1f0-4724-817b-f35b47272f72.png)
 ###
-### Код реализации сброса пароля в приложении.
-![image](https://user-images.githubusercontent.com/99389490/216462366-e0f95cf2-3f6e-4228-81bc-c379d85d06df.png)
+### Код реализации авторизации в приложении.
+![image](https://user-images.githubusercontent.com/99389490/221420429-86699593-6a9d-4e64-bfb5-c7883938a0d8.png)
 ###
-### Далее необходимо перейти к реализации создания заметки. Для этого понадобятся файлы "note.dart" и "app_note_controller". В сущности заметки хранятся элементы таблицы, такие как: число, описание, имя, категория, дата создания, также дата редактирования и логическое удаление. Для создания заметки были использован метод POST. После необходимо протестировать работоспособность авторизации в Thunder Client с помощью запроса "http://localhost:8888/notes?search=/b/". На рисунке будет указано, что заметка не найдена, так как поиск осуществляется не по категории, а по имени, поэтому правильным запросом в данной ситуации будет "http://localhost:8888/notes?search=aboba". Также существует запрос для вывода всех заметок "http://localhost:8888/notes" с методом GET.
-![image](https://user-images.githubusercontent.com/99389490/216462726-4262c3fd-fcd1-49dc-87c4-0bbe753e19f6.png)
-![image](https://user-images.githubusercontent.com/99389490/216462804-bbdf7874-04c1-4c5c-a2db-04584b46f2ed.png)
-![image](https://user-images.githubusercontent.com/99389490/216463015-24050b99-fd4f-4cfe-bbac-b5e6c560f055.png)
+### Пример реализации авторизации в приложении.
+![image](https://user-images.githubusercontent.com/99389490/221420489-52d3d108-a9c9-4c34-a5bb-f60055698e72.png)
+![image](https://user-images.githubusercontent.com/99389490/221420498-91fe5e6e-f5cd-43ba-8caa-5453ee6798a9.png)
 ###
-### Далее необходимо перейти к реализации поиска заметок. Для этого понадобятся файлы "note.dart" и "app_note_controller". Для поиска заметки были использован метод GET. После необходимо протестировать работоспособность авторизации в Thunder Client с помощью запроса "http://localhost:8888/notes?search=/b/". На рисунке будет указано, что заметка не найдена, так как поиск осуществляется не по категории, а по имени. 
-![image](https://user-images.githubusercontent.com/99389490/216463307-32bc8368-ffd4-41fb-826c-46f7b6a3f80b.png)
-![image](https://user-images.githubusercontent.com/99389490/216463195-fdefadd5-ef40-4065-a128-dc8d6796a5a3.png)
-![image](https://user-images.githubusercontent.com/99389490/216463223-ff232da5-8d56-4ff7-be9c-17dd08514823.png)
-###
-### Далее необходимо перейти к реализации удаления заметки. Для этого понадобятся файлы "note.dart" и "app_note_controller". Для удаления заметки были использован метод DELETE. После необходимо протестировать работоспособность авторизации в Thunder Client с помощью запроса "http://localhost:8888/notes/3".
-![image](https://user-images.githubusercontent.com/99389490/216463463-d56b76d7-3a60-4cc9-a4fd-f7d2d75b2933.png)
-![image](https://user-images.githubusercontent.com/99389490/216463514-802bbd9c-644a-4a1a-9ac0-ba139fc0a39b.png)
-###
-### Далее необходимо перейти к реализации восстановления заметки. Для этого понадобятся файлы "note.dart" и "app_note_controller". Для восстановления заметки понадобился метод GET. После необходимо протестировать работоспособность авторизации в Thunder Client с помощью запроса "http://localhost:8888/notes/5?restore" с использованием query-параметра "restore".
-![image](https://user-images.githubusercontent.com/99389490/216463686-27eb4db6-bbef-4844-aa15-bb5bf08a45f8.png)
-![image](https://user-images.githubusercontent.com/99389490/216463812-0f187246-bbe1-4235-b017-be766eefac25.png)
-###
-### После необходимо перейти к реализации логического удаления. Для этого понадобятся файлы "note.dart" и "app_note_controller". Для фильтрации используется метод GET. После необходимо протестировать работоспособность авторизации в Thunder Client с помощью запроса "http://localhost:8888/notes?deleted=0" с использованием query-параметра "deleted".
-![image](https://user-images.githubusercontent.com/99389490/216463951-686286fb-e435-4d80-8306-dfc95801b9a1.png)
-###
-### В конце необходимо создать историю всех действий. В сущности истории хранятся элементы таблицы, такие как: id, действие, которое было произведено и дата редактирования. Для создания истории всех действий был использован метод GET. После необходимо протестировать работоспособность авторизации в Thunder Client с помощью запроса "http://localhost:8888/history".
-![image](https://user-images.githubusercontent.com/99389490/216464062-7c963e30-e408-4923-b4b3-9f4ef60ee7f5.png)
-![image](https://user-images.githubusercontent.com/99389490/216464150-6a959c46-9399-4f38-9680-4927f39978f2.png)
-![image](https://user-images.githubusercontent.com/99389490/216464339-c093cdf5-e8ad-4280-9c6d-921b686bdea4.png)
-###
-### Ниже представлены все хранящиеся данные в БД.
-![image](https://user-images.githubusercontent.com/99389490/216464555-dea17267-2da4-494c-a0b5-bea4f9e1efe0.png)
-![image](https://user-images.githubusercontent.com/99389490/216464590-9528b782-69ab-4136-9bd8-19e479a227ea.png)
-### Вывод: В данной практической работе была произведена первичная работа с Conduit. Были реализованы функции: регистрация, авторизация, RefreshToken, Вывод данных пользователя, редактирование данных пользователя, изменение пароля пользователя, CRUD действия по теме, поиск, фильтрация, логическое удаление и восстановление, история действий.
+### Вывод: В данной практической работе была произведена первичная работа с Firebase. Были реализованы функции: анонимный вход, пользовательский вход, генерация письма для регистрации на почту.
